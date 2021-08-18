@@ -88,6 +88,9 @@ const checkIfFormValid = (title, author, totalpages) => {
   return true;
 }
 
+/** 
+ * Action performed on Book tiles e.g., isRead, Delete
+*/
 const actionOnBooks = (e) => {
   const index = Array.from($main.children).indexOf(e.currentTarget);
   const { name } = e.target;
